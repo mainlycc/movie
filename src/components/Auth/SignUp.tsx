@@ -12,7 +12,7 @@ export default function SignUp() {
     e.preventDefault();
     setLoading(true);
     
-    const { data, error } = await supabase.auth.signUp({
+    const { /* data, */ error } = await supabase.auth.signUp({
       email,
       password,
     });
